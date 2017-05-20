@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>City_Classified</display-name>
+  
+ <servlet>
+ <servlet-name>For</servlet-name>
+ <servlet-class>controller.Forwarder</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>For</servlet-name>
+ <url-pattern></url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>Post</servlet-name>
+ <jsp-file>/Post_Result.jsp</jsp-file>
+ <multipart-config>
+ <max-file-size>20848820</max-file-size>
+ <max-request-size>418018841</max-request-size>
+ </multipart-config>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>Post</servlet-name>
+ <url-pattern>/Post_Result.jsp</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+</web-app>
